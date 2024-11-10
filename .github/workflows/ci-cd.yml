@@ -26,9 +26,3 @@ jobs:
 
       - name: Run lint
         run: npm run lint
-
-      - name: Rollback on failure
-        if: failure()
-        run: |
-          echo "Rolling back to previous stable version..."
-          git checkout HEAD~1  # Перехід на попередній коміт

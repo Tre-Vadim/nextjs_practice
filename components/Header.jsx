@@ -4,10 +4,10 @@ import Link from "next/link";
 import styles from "@/app/page.module.css";
 
 export const Header = () => {
-  console.log('1', 1);
   return (
     [
       <Image
+        key="1"
         className={styles.logo}
         src="/next.svg"
         alt="Next.js logo"
@@ -15,7 +15,7 @@ export const Header = () => {
         height={38}
         priority
       />,
-      <ol>
+      <ol key="2">
         <li>
           Get started by editing <code>app/page.js</code>.
         </li>

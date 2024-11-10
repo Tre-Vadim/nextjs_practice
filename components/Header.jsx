@@ -4,6 +4,7 @@ import Link from "next/link";
 import styles from "@/app/page.module.css";
 
 export const Header = () => {
+  console.log('1', 1);
   return (
     [
       <Image
